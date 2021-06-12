@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
-import { indice, title, description } from '../../data/FormSection.json'
+import { indice, title, description, step_1 } from '../../data/FormSection.json'
+import { CreateAccount } from '../createAccount'
 import { FormSectionStyled } from './styles'
 
 export const FormSection = () => {
@@ -51,6 +52,7 @@ export const FormSection = () => {
 					<h3>{title[step]}</h3>
 					<p>{description[step]}</p>
 				</div>
+				{step === 1 && <CreateAccount text={step_1} handler={setStep} />}
 			</div>
 		</FormSectionStyled>
 	)

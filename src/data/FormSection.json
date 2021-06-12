@@ -4,6 +4,19 @@
     "part_2":["","Inicia sesión", "Personal Info.","Localización","Verificación por tarjeta"]
   },
   "title":["","¡Únete a la comunidad!","Registra tu cuenta individual","Complete Your Profile!","Verifica tu perfil"],
-  "description":["","Para empezar, dinos que cuenta te gustaría abrir.","Para poder revisar que se trata de una cuenta real, necesitamos la siguiente información","Para poder revisar que se trata de una cuenta real, necesitamos la siguiente información","Para poder revisar que se trata de una cuenta real, necesitamos la siguiente información"]
-
+  "description":["","Para empezar, dinos que cuenta te gustaría abrir.","Para poder revisar que se trata de una cuenta real, necesitamos la siguiente información","Para poder revisar que se trata de una cuenta real, necesitamos la siguiente información","Para poder revisar que se trata de una cuenta real, necesitamos la siguiente información"],
+  
+  "step_1":[
+      {},
+      {
+        "icon":"user-icon.svg",        
+        "title": "Developers",
+        "description":"Cuenta personas para entrar en el mundo dev"
+      },
+      {
+        "icon":"briefcase.svg",        
+        "title": "Business",
+        "description":"Tienes o perteneces a una compañía"
+      }
+  ]
 }

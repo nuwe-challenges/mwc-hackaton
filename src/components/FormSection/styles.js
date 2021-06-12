@@ -6,7 +6,7 @@ export const FormSectionStyled = styled.section`
 	width: 59%;
 
 	.Container {
-		margin: 3rem 3rem;
+		margin: 3rem 3rem 3rem 5rem;
 
 		header {
 			display: flex;
@@ -17,8 +17,14 @@ export const FormSectionStyled = styled.section`
 			span {
 				align-items: center;
 				display: flex;
+				cursor: pointer;
 				font-size: 0.8rem;
+
 				justify-content: space-between;
+
+				&:hover {
+					transform: translateX(-0.4rem);
+				}
 			}
 
 			.Step-1 {
@@ -27,6 +33,14 @@ export const FormSectionStyled = styled.section`
 				span {
 					color: green;
 					margin-left: 0.2rem;
+
+					&:hover {
+						transform: translateX(0);
+					}
+				}
+
+				&:hover {
+					transform: translateX(0);
 				}
 			}
 
@@ -39,8 +53,17 @@ export const FormSectionStyled = styled.section`
 				font-size: 0.7rem;
 
 				span {
-					font-size: 0.8rem;
 					color: #8692a6;
+					cursor: initial;
+					font-size: 0.8rem;
+
+					&:hover {
+						transform: translateX(0);
+					}
+				}
+
+				&:hover {
+					transform: translateX(0);
 				}
 			}
 
@@ -53,13 +76,13 @@ export const FormSectionStyled = styled.section`
 		}
 
 		.Form-container {
-			margin: 2rem 0 0 3rem;
+			margin-top: 2rem;
 
 			p {
 				color: #8692a6;
-				font-size: 0.7rem;
+				font-size: 0.8rem;
 				margin-top: 0.5rem;
-				width: 65%;
+				width: 60%;
 			}
 		}
 	}
