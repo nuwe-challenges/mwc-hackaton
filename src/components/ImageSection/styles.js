@@ -6,7 +6,7 @@ export const ImageContentStyled = styled.section`
 	color: white;
 	height: 100%;
 
-	width: 45%;
+	width: 41%;
 
 	.BackgroundGreen {
 		align-items: center;

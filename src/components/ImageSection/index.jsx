@@ -1,4 +1,5 @@
 import React from 'react'
+import text from '../../data/ImageSection.json'
 import { ImageContentStyled } from './styles'
 
 export const ImageSection = () => {
@@ -7,12 +8,7 @@ export const ImageSection = () => {
 			<div className='BackgroundGreen'>
 				<div className='Content'>
 					<span>“</span>
-					<p>
-						Nuwe es la platforma que convierte el desarrollo profesional, la
-						búsquda de trabajo y la conexiones de personas y empresas en un
-						juego. Haciendo que puedas centrarte en lo que te gusta, programar,
-						diseñar, crear, planear...
-					</p>
+					<p>{text.text}</p>
 					<svg
 						width='34'
 						height='33'
