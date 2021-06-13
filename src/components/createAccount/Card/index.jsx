@@ -1,20 +1,9 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { CreateAccountCardStyled } from './styles'
+
 export const CreateAccountCard = ({ icon, title, text, handler }) => {
-	const [click, confirmClick] = useState(false)
-
-	const handlerClick = () => {
-		if (!click) {
-			confirmClick(true)
-			setTimeout(() => {
-				handler((s) => s + 1)
-				confirmClick(false)
-			}, 1000)
-		}
-	}
-
 	return (
-		<CreateAccountCardStyled click={click} onClick={handlerClick}>
+		<CreateAccountCardStyled onClick={() => handler((s) => s + 1)}>
 			<picture>
 				<img src={`/Card/${icon}`} alt='' />
 			</picture>

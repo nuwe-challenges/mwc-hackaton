@@ -2,8 +2,8 @@ import styled from 'styled-components'
 
 export const CreateAccountCardStyled = styled.div`
 	align-items: center;
-	background-color: ${(props) => (props.click ? '#F5F9FF' : '#ffffff')};
-	border: 0.1rem solid ${(props) => (props.click ? '#4F934A' : '#bdbdbdbd')};
+	background-color: #ffffff;
+	border: 0.1rem solid #bdbdbdbd;
 	border-radius: 0.3rem;
 
 	cursor: pointer;
@@ -16,6 +16,10 @@ export const CreateAccountCardStyled = styled.div`
 	&:hover {
 		background-color: #f5f9ff;
 		border: 0.1rem solid #4f934a;
+
+		picture:nth-of-type(2) {
+			opacity: 1;
+		}
 	}
 
 	picture:nth-of-type(1) {
@@ -39,7 +43,7 @@ export const CreateAccountCardStyled = styled.div`
 	picture:nth-of-type(2) {
 		display: flex;
 		justify-content: center;
-		opacity: ${(props) => (props.click ? '1' : '0')};
+		opacity: 0;
 		width: 15%;
 
 		img {
